@@ -347,7 +347,7 @@ h1,h2,h3,h4,h5,h6{
     width: 1200px;
 }
 .intro-index-bot{
-    background: url("../img/index_bot.png") center no-repeat;
+    background: url("../img/contacts_top.png") center no-repeat;
     -webkit-background-size: cover;
 }
 
@@ -360,7 +360,7 @@ h1,h2,h3,h4,h5,h6{
     -webkit-background-size: cover;
 }
 .intro--contacts{
-    background: url("../img/contacts.png") center no-repeat;
+    background: url("../img/index_bot.png") center no-repeat;
     -webkit-background-size: cover;
     justify-content: flex-start;
 }
@@ -368,7 +368,7 @@ h1,h2,h3,h4,h5,h6{
 
 .intro__inner{
     width: 100%;
-    max-width: 950px;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 40px;
 
@@ -433,7 +433,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .page__inner{
     width: 100%;
-    max-width: 12000px;
+    max-width: 1200px;
     margin: 0 auto;
     margin-top: 5%;
 
@@ -641,7 +641,9 @@ h1,h2,h3,h4,h5,h6{
 /* partners */
 
 .partners{
+    
     margin-top: 40px;
+    
     
 }
 .partners--title{
@@ -651,6 +653,7 @@ h1,h2,h3,h4,h5,h6{
     .partners{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        
     }
 
 }
