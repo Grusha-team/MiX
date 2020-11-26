@@ -28,6 +28,10 @@ h1,h2,h3,h4,h5,h6{
     margin: 0 auto;
 
 }
+
+.intro--mid--container{
+    max-width: 1700px;
+}
 .header--container{
     width: 100%;
     max-width: 1000px;
@@ -326,7 +330,7 @@ h1,h2,h3,h4,h5,h6{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 1100px;
+    min-height: 1250px;
     height: 100vh;
     padding: 0 10px;
 }
@@ -345,6 +349,7 @@ h1,h2,h3,h4,h5,h6{
     background: url("../img/index_mid.png") center no-repeat;
     -webkit-background-size: cover;
     width: 1200px;
+    
 }
 .intro-index-bot{
     background: url("../img/contacts_top.png") center no-repeat;
@@ -400,14 +405,14 @@ h1,h2,h3,h4,h5,h6{
         -webkit-background-size: cover;
 }
 .projects--podcast{
-    background-color: #2E388E;
+    background-color: #455a9d;
 
 }
 @media(min-width:768px){
     .page{
         width:100%;
         display: flex;
-        min-height: 1100px;
+        min-height: 1250px;
         height: 100vh;
 
     padding:0 10px;
@@ -422,7 +427,7 @@ h1,h2,h3,h4,h5,h6{
     .page{
         width: 100%;
         display: flex;
-        min-height: 1100px;
+        min-height: 1200px;
         padding:0 10px;
     }
 
@@ -433,7 +438,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .page__inner{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     margin-top: 5%;
 
@@ -448,6 +453,7 @@ h1,h2,h3,h4,h5,h6{
 }
 .page__title-center{
     text-align: center;
+    margin-top: 2%;
 }
 .page__text{
     font-size: 30px;
@@ -537,10 +543,10 @@ h1,h2,h3,h4,h5,h6{
   .flip-container,
   .front,
   .back {
-    width: 520px;
-    height: 100px;
+    width: 720px;
+    height: 180px;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
   }
   .flipper {
@@ -562,7 +568,9 @@ h1,h2,h3,h4,h5,h6{
     z-index: 2;
     transform: rotateY(0deg);
     background-color: #5b8861;
-    
+    font-size: 30px;
+    align-content: center;
+    display: grid;
   }
   .back {
     transform: rotateY(180deg);
@@ -611,7 +619,7 @@ h1,h2,h3,h4,h5,h6{
 /* Grid */
 
 
-@media(min-width:768px){
+@media(min-width:1568px){
     .grid{
         
         margin-top: 50px;
@@ -622,6 +630,19 @@ h1,h2,h3,h4,h5,h6{
         justify-items: center; 
     }
 }
+@media(min-width:768px){
+    .grid{
+        
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 50px;
+        grid-column-gap: 20px;
+        justify-items: center; 
+    }
+}
+
+
 @media(max-width:768px){
     .grid{
         justify-items: center; 
@@ -633,7 +654,9 @@ h1,h2,h3,h4,h5,h6{
     .flip-container{
         margin: 0 auto;
     }
-
+    .intro-index-mid{
+        min-height: 2000px;
+    }
 }
 .header__link--partners{
     color:#333;
@@ -661,12 +684,15 @@ h1,h2,h3,h4,h5,h6{
     .flip-container,
   .front,
   .back {
-    width: 320px;}
+    width: 520px;}
     .partners{
         margin-top: 50px;
         display: grid;
         grid-template-columns: 1fr;
         grid-row-gap: 25px ;
+    }
+    .back{
+        font-size: 16px;
     }
     .picture{
         display: block;
@@ -679,7 +705,57 @@ h1,h2,h3,h4,h5,h6{
     }
 }
 
+@media(max-width: 580px){
+    .flip-container,
+    .front,
+    .back {
+      width: 420px;}
+      .back{
+        font-size: 14px;
+      }
+}
+@media(max-width: 450px){
+    .flip-container,
+    .front,
+    .back {
+      width: 320px;
+    height: 300px;}
+    .back{
+        font-size: 15px;
+    }
+}
 
+@media(max-width: 1480px) and (min-width: 1086px){
+    .flip-container,
+    .front,
+    .back {
+      width: 520px;
+    height: 150px;}
+    .back{
+        font-size: 15px;
+    }
+}
+@media(max-width: 1086px) and (min-width: 881px){
+    .flip-container,
+    .front,
+    .back {
+      width: 420px;
+    height: 150px;}
+    .back{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 880px) and (min-width: 769px){
+    .flip-container,
+    .front,
+    .back {
+      width: 360px;
+    height: 165px;}
+    .back{
+        font-size: 13px;
+    }
+}
 /* Contacts */
 
 .contacts-text{   
@@ -715,4 +791,10 @@ h1,h2,h3,h4,h5,h6{
     }
 
 
+}
+@media(max-width:320px){
+    .flip-container,
+    .front,
+    .back {
+      width: 290px;}
 }
