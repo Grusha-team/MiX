@@ -359,6 +359,7 @@ h1,h2,h3,h4,h5,h6{
 .intro--projects{
     background: url("../img/2_mid.png") center no-repeat;
     -webkit-background-size: cover;
+    min-height: 2000px;
 }
 .intro--partners{
     background: url("../img/partners__page1.png") center no-repeat;
